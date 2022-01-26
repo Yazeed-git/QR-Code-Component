@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    /* primary */
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+
+    /* font-weight */
+    --regular: 400;
+    --bold: 700;
+}
+/* reset */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body{
+    font-family:'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    background: var(--Light-gray);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.card{
+    /* width: 60%; */
+    max-width: 325px;
+    padding: 1em;
+    background-color: var(--White);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card__img{
+    border-radius: 10px;
+    margin-bottom: 1.75em;
+}
+.card__title{
+    color: var(--Dark-blue);
+    font-size: 1.25rem;
+    font-weight: var(--bold);
+    margin-bottom: 0.75em;
+    padding: 0 1em;
+}
+.card__text{
+    color: var(--Grayish-blue);
+    padding: 0 1em;
+    margin-bottom: 1.75em;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: -2em;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media(min-width: 2560px){
+    body{
+        font-size: 30px;
+    }
+    .card{
+        max-width: 700px;
+        padding: 1.25em;
+    }
+    .card__img{
+        width: 690px;
+        margin: 0 auto;
+    }
+    .card__title{
+        font-size: 3rem;
+        margin: 1.5em 0 1em;
+        padding: 0;
+    }
+}
